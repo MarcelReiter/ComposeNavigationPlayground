@@ -2,7 +2,6 @@ package com.anfema.composenavigationplayground
 
 import android.app.Application
 import com.anfema.composenavigationplayground.authentication.authenticationModule
-import com.anfema.composenavigationplayground.loggedIn.loggedInModule
 import com.anfema.composenavigationplayground.login.loginModule
 import com.anfema.composenavigationplayground.main.mainModule
 import org.koin.android.ext.koin.androidContext
@@ -19,7 +18,6 @@ class PlaygroundApplication : Application() {
                 mainModule,
                 authenticationModule,
                 loginModule,
-                loggedInModule
             )
         }
     }
