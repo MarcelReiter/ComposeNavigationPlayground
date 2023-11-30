@@ -8,5 +8,12 @@ class PlaygroundApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+
+        startKoin {
+            androidContext(applicationContext)
+            modules(
+                // TODO
+            )
+        }
     }
 }
