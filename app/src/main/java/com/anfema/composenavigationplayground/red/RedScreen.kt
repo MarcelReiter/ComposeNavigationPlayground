@@ -3,15 +3,19 @@ package com.anfema.composenavigationplayground.red
 import androidx.compose.runtime.Composable
 import com.anfema.composenavigationplayground.ui.composables.Button
 import com.anfema.composenavigationplayground.ui.composables.DefaultScreen
+import com.anfema.composenavigationplayground.ui.theme.ColorTheme
+import com.anfema.composenavigationplayground.ui.theme.RedColorScheme
 import org.koin.androidx.compose.getViewModel
 
 @Composable
 fun RedScreen(
     viewModel: RedViewModel = getViewModel()
 ) {
-    RedScreen(
-        onLogout = viewModel::logout
-    )
+    ColorTheme(RedColorScheme) {
+        RedScreen(
+            onLogout = viewModel::logout
+        )
+    }
 }
 
 @Composable
