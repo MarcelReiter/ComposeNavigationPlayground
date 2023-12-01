@@ -1,4 +1,4 @@
-package com.anfema.composenavigationplayground.login
+package com.anfema.composenavigationplayground.login.main
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

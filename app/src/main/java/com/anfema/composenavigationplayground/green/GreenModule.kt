@@ -1,5 +1,6 @@
 package com.anfema.composenavigationplayground.green
 
+import com.anfema.composenavigationplayground.green.main.GreenViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

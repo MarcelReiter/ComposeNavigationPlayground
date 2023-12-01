@@ -1,4 +1,4 @@
-package com.anfema.composenavigationplayground.blue
+package com.anfema.composenavigationplayground.blue.main
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

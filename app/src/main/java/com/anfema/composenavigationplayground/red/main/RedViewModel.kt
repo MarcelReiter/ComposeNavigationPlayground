@@ -1,10 +1,10 @@
-package com.anfema.composenavigationplayground.green
+package com.anfema.composenavigationplayground.red.main
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.anfema.composenavigationplayground.authentication.AuthenticationRepository
 
-class GreenViewModel(
+class RedViewModel(
     private val repository: AuthenticationRepository
 ) : ViewModel() {
 

@@ -4,6 +4,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraph
 import androidx.navigation.compose.composable
 import androidx.navigation.createGraph
+import com.anfema.composenavigationplayground.login.main.LoginScreen
 
 private const val LOGIN_GRAPH = "loginGraph"
 private const val LOGIN_SCREEN = "loginScreen"

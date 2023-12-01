@@ -1,4 +1,4 @@
-package com.anfema.composenavigationplayground.red
+package com.anfema.composenavigationplayground.red.main
 
 import androidx.compose.runtime.Composable
 import com.anfema.composenavigationplayground.ui.composables.Button

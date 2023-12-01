@@ -1,4 +1,4 @@
-package com.anfema.composenavigationplayground.login
+package com.anfema.composenavigationplayground.login.main
 
 import androidx.compose.runtime.Composable
 import com.anfema.composenavigationplayground.ui.composables.Button
