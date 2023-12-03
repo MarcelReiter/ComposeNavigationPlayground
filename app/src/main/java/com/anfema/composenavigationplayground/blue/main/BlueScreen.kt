@@ -10,12 +10,14 @@ import org.koin.androidx.compose.getViewModel
 @Composable
 fun BlueScreen(
     onOpenDetail: () -> Unit,
+    onOpenModal: () -> Unit,
     viewModel: BlueViewModel = getViewModel(),
 ) {
     ColorTheme(BlueColorScheme) {
         BlueScreen(
             onLogout = viewModel::logout,
             onOpenDetail = onOpenDetail,
+            onOpenModal = onOpenModal,
         )
     }
 }
@@ -24,6 +26,7 @@ fun BlueScreen(
 private fun BlueScreen(
     onLogout: () -> Unit,
     onOpenDetail: () -> Unit,
+    onOpenModal: () -> Unit,
 ) {
     DefaultScreen(
         name = "Blue",
@@ -37,6 +40,10 @@ private fun BlueScreen(
             Button(
                 text = "Open Detail Screen",
                 onClick = onOpenDetail,
+            )
+            Button(
+                text = "Open Modal",
+                onClick = onOpenModal,
             )
         }
     )

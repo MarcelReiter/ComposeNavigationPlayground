@@ -24,6 +24,7 @@ fun NavGraphBuilder.redNavGraph(navController: NavController) {
         composable(RED_SCREEN) {
             RedScreen(
                 onOpenDetail = { navController.navigate(RED_DETAIL_SCREEN) },
+                onOpenModal = { navController.navigate(RED_MODAL_SCREEN) }
             )
         }
 

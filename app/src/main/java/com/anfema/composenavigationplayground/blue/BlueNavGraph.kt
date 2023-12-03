@@ -23,7 +23,8 @@ fun NavGraphBuilder.blueNavGraph(navController: NavController) {
     ) {
         composable(BLUE_SCREEN) {
             BlueScreen(
-                onOpenDetail = { navController.navigate(BLUE_DETAIL_SCREEN) }
+                onOpenDetail = { navController.navigate(BLUE_DETAIL_SCREEN) },
+                onOpenModal = { navController.navigate(BLUE_MODAL_SCREEN) }
             )
         }
 

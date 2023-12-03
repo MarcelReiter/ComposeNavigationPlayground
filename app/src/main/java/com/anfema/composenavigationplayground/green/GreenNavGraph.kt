@@ -23,7 +23,8 @@ fun NavGraphBuilder.greenNavGraph(navController: NavController) {
     ) {
         composable(GREEN_SCREEN) {
             GreenScreen(
-                onOpenDetail = { navController.navigate(GREEN_DETAIL_SCREEN) }
+                onOpenDetail = { navController.navigate(GREEN_DETAIL_SCREEN) },
+                onOpenModal = { navController.navigate(GREEN_MODAL_SCREEN) }
             )
         }
 

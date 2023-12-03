@@ -10,12 +10,14 @@ import org.koin.androidx.compose.getViewModel
 @Composable
 fun RedScreen(
     onOpenDetail: () -> Unit,
+    onOpenModal: () -> Unit,
     viewModel: RedViewModel = getViewModel(),
 ) {
     ColorTheme(RedColorScheme) {
         RedScreen(
             onLogout = viewModel::logout,
             onOpenDetail = onOpenDetail,
+            onOpenModal = onOpenModal,
         )
     }
 }
@@ -24,6 +26,7 @@ fun RedScreen(
 private fun RedScreen(
     onLogout: () -> Unit,
     onOpenDetail: () -> Unit,
+    onOpenModal: () -> Unit,
 ) {
     DefaultScreen(
         name = "Red",
@@ -37,6 +40,10 @@ private fun RedScreen(
             Button(
                 text = "Open Detail Screen",
                 onClick = onOpenDetail,
+            )
+            Button(
+                text = "Open Modal",
+                onClick = onOpenModal,
             )
         }
     )
