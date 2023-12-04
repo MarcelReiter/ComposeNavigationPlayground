@@ -15,8 +15,8 @@ fun NavController.createLoggedInNavGraph(): NavGraph =
         route = LOGGED_IN_GRAPH,
         startDestination = BLUE_GRAPH,
         builder = {
-            blueNavGraph()
-            greenNavGraph()
-            redNavGraph()
+            blueNavGraph(this@createLoggedInNavGraph)
+            greenNavGraph(this@createLoggedInNavGraph)
+            redNavGraph(this@createLoggedInNavGraph)
         }
     )
