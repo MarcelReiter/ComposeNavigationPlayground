@@ -4,10 +4,12 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
+import com.anfema.composenavigationplayground.red.detail.RedDetailScreen
 import com.anfema.composenavigationplayground.red.main.RedScreen
 
 const val RED_GRAPH = "redGraph"
 private const val RED_SCREEN = "redScreen"
+private const val RED_DETAIL_SCREEN = "redDetailScreen"
 
 fun NavGraphBuilder.redNavGraph(navController: NavController) {
     navigation(
@@ -16,6 +18,12 @@ fun NavGraphBuilder.redNavGraph(navController: NavController) {
     ) {
         composable(RED_SCREEN) {
             RedScreen()
+        }
+
+        composable(RED_DETAIL_SCREEN) {
+            RedDetailScreen(
+                onNavigateBack = navController::popBackStack,
+            )
         }
     }
 }
