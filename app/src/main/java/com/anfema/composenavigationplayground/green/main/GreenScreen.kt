@@ -9,11 +9,13 @@ import org.koin.androidx.compose.getViewModel
 
 @Composable
 fun GreenScreen(
-    viewModel: GreenViewModel = getViewModel()
+    onOpenDetail: () -> Unit,
+    viewModel: GreenViewModel = getViewModel(),
 ) {
     ColorTheme(GreenColorScheme) {
         GreenScreen(
-            onLogout = viewModel::logout
+            onLogout = viewModel::logout,
+            onOpenDetail = onOpenDetail,
         )
     }
 }
@@ -21,6 +23,7 @@ fun GreenScreen(
 @Composable
 private fun GreenScreen(
     onLogout: () -> Unit,
+    onOpenDetail: () -> Unit,
 ) {
     DefaultScreen(
         name = "Green",
@@ -31,7 +34,10 @@ private fun GreenScreen(
             )
         },
         content = {
-
+            Button(
+                text = "Open Detail Screen",
+                onClick = onOpenDetail,
+            )
         }
     )
 }

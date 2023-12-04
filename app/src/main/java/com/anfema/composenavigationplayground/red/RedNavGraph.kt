@@ -17,7 +17,9 @@ fun NavGraphBuilder.redNavGraph(navController: NavController) {
         startDestination = RED_SCREEN,
     ) {
         composable(RED_SCREEN) {
-            RedScreen()
+            RedScreen(
+                onOpenDetail = { navController.navigate(RED_DETAIL_SCREEN) },
+            )
         }
 
         composable(RED_DETAIL_SCREEN) {
